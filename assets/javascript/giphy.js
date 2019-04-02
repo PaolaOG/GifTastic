@@ -61,9 +61,9 @@ var movies = ["High School Musical", "Hanna Montana", "Jane The Virgin", "Vampir
         renderButtons();
 
        // Add a listener event for all buttons.
-       $("button").on("click", function () {
+       $(".movie").on("click", function () {
       //"this" refers to button that was clicked
-      var movie = $(this).attr("data-movie");
+      var movie = $(this).attr("data-name");
 
       //Making a queryURL using the name of the movies
       var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + movie
